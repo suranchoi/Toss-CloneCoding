@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family : "woff2";
+    src : url("https://static.toss.im/tps/20211111/medium/103.woff2");
+}
+
+*{
+    font-family : "woff2";
+}
+
+header{
+    position: fixed;
+}
+
+#toss-main{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}
+
+.mainpic{
+    position: relative;
+    text-align: center;
+}
+
+.text{
+    position: absolute;
+    color : black;
+    font-size: 50pt;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.explain{
+    font-size: 20pt;
+    width: 100%;
+    height: 400px;
+    background-color: #f9fafb;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 50px;
+    padding: 400px 0;
+}
+
+.home{
+    height: 400px;
+    margin: auto 5%;
+}
+
+.left {
+    float: left;
+    border: 1px dashed orange;
+    width: 40%;
+    /* margin: auto 5%;  */
+    /* position: relative; */
+}
+
+.front > img{
+    width: 70%;
+    height: 80%;
+    /* position: absolute;
+    /* top: 0px;
+    left: 0px; 
+    z-index: 1; */
+}
+
+.back > img{
+    width: 70%;
+    height: 80%;
+    /* position: absolute;
+    z-index: 2; */
+}
+
+.left > p{
+    font-size: 20pt;
+    color: #4c82ee;
+}
+
+.left > .main{
+    font-size: 38pt;
+    color: black;
+}
+
+.left > h3{
+    font-size: 30pt;
+}
+
+.right{
+    float: right;
+    border: 1px dashed orange;
+    width: 40%;
+    /* margin: auto 5%;  */
+}
+
+.right > img{
+    width: 70%;
+    height: 80%;
+}
+
+.right > p{
+    color: #444b57;
+    font-size: 18pt;
+}
+
+.payment{
+    clear: both;
+    background-color: #f9fafb;
+    border: 1px dashed blue;
+    padding: 5% 10%;
+}
+
+.payment > p{
+    font-size: 20pt;
+    color: #4c82ee;
+}
+
+.payment > .main{
+    font-size: 38pt;
+    color: black;
+}
+
+.payment > .left > p{
+    font-size: 15pt;
+    color: #4c82ee;
+}
+
+.payment > .left > .main{
+    font-size: 25pt;
+    color: black;
+}
+
+.payment > .left > .subtext{
+    font-size: 15pt;
+    color: #9fa5ad;
+}
+
+.payment > .left > img{
+    width: 100%;
+    height: 80%;
+}
+
+.payment > .right > img{
+    width: 100%;
+    height: 100%;
+}
+
+.payment > .right > p{
+    font-size: 15pt;
+    color: #4c82ee;
+}
+
+.payment > .right > .main{
+    font-size: 25pt;
+    color : black;
+}
+
+.payment > .right > .subtext{
+    font-size: 15pt;
+    color: #9fa5ad;
+}
