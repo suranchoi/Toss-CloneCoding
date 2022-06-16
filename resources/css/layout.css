@@ -54,7 +54,7 @@ header{
     margin: auto 5%;
 }
 
-.left {
+.home > .left {
     float: left;
     border: 1px dashed orange;
     width: 40%;
@@ -78,6 +78,8 @@ header{
     z-index: 2; */
 }
 
+
+
 .left > p{
     font-size: 20pt;
     color: #4c82ee;
@@ -92,7 +94,8 @@ header{
     font-size: 30pt;
 }
 
-.right{
+
+.home > .right{
     float: right;
     border: 1px dashed orange;
     width: 40%;
@@ -109,21 +112,36 @@ header{
     font-size: 18pt;
 }
 
-.payment{
+.pay_main{
     clear: both;
     background-color: #f9fafb;
     border: 1px dashed blue;
     padding: 5% 10%;
 }
 
-.payment > p{
+.pay_main > p{
     font-size: 20pt;
     color: #4c82ee;
 }
 
-.payment > .main{
+.pay_main > .main{
     font-size: 38pt;
     color: black;
+}
+
+.payment{
+    background-color: #f9fafb;
+    border: 5px dashed yellow;
+    height: 1000px;
+    padding: 5% 12%;
+}
+
+
+.payment > .left{
+    border: 1px dashed pink;
+    float: left;
+    width : 43%;
+    height : 80%;
 }
 
 .payment > .left > p{
@@ -142,13 +160,20 @@ header{
 }
 
 .payment > .left > img{
-    width: 100%;
+    width: 480px;
+    height: 360px;
+}
+
+.payment > .right{
+    border : 1px dashed pink;
+    float: right;
+    width : 43%;
     height: 80%;
 }
 
 .payment > .right > img{
-    width: 100%;
-    height: 100%;
+    width: 480px;
+    height: 360px;
 }
 
 .payment > .right > p{
@@ -165,3 +190,80 @@ header{
     font-size: 15pt;
     color: #9fa5ad;
 }
+
+
+.loan > .left{
+    float: left;
+    width: 43%;
+    height: 80%;
+}
+
+.loan > .right{
+    float: right;
+    width: 43%;
+    height: 80%;
+}
+
+.credit{
+    clear:both;
+    background-color: #f9fafb;  
+    padding: 5% 10%;
+}
+
+.credit > p{
+    font-size: 20pt;
+    color: #4c82ee;
+}
+
+.credit > .main{
+    font-size: 38pt;
+    color: black;
+}
+
+.credit-grade{
+    background-color: #f9fafb;  
+    height: 1000px;
+}
+
+.credit-grade > .left{
+    float: left;
+    width: 43%;
+    height: 800px;
+    border: 3px dashed yellow;
+}
+
+.credit-grade .main{
+    font-size: 20pt;
+    color : #424a56;
+}
+
+.credit-grade .sub{
+    font-size : 15pt;
+    color: #7e8691;
+}
+
+.credit-grade > .left > img{
+    height: 50px;
+    width: 90px;
+}
+
+.credit-grade > .right{
+    float: right;
+    width: 43%;
+    height: 800px;
+    border: 3px dashed yellow;
+}
+
+.credit-grade > .right > img{
+    height: 10px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
