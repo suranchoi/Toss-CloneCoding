@@ -6,7 +6,9 @@
 @font-face {
     font-family : "woff2";
     src : url("https://static.toss.im/tps/20211111/medium/103.woff2");
+    /* src : url("https://static.toss.im/tps/20211111/semibold/103.woff2"); */
 }
+
 
 *{
     font-family : "woff2";
@@ -14,6 +16,8 @@
 
 header{
     position: fixed;
+    left: 0px;
+    top: opx;
 }
 
 #toss-main{
@@ -50,35 +54,30 @@ header{
 }
 
 .home{
-    height: 400px;
-    margin: auto 5%;
+    height: 1200px;
+    margin: 5% 10%;
 }
 
 .home > .left {
     float: left;
-    border: 1px dashed orange;
     width: 40%;
-    /* margin: auto 5%;  */
-    /* position: relative; */
+    height: 800px;
+    position: relative;
 }
 
-.front > img{
-    width: 70%;
-    height: 80%;
-    /* position: absolute;
-    /* top: 0px;
-    left: 0px; 
-    z-index: 1; */
+.left > .back > .front > img{
+    width: 237pt;
+    height: 455pt;
+    position: absolute;
+    top: 436px;
+    left: 35px; 
 }
 
-.back > img{
-    width: 70%;
-    height: 80%;
-    /* position: absolute;
-    z-index: 2; */
+.left > .back > img{
+    width: 420pt;
+    height: 600pt;
+    transform: translate(-90px, 50px);
 }
-
-
 
 .left > p{
     font-size: 20pt;
@@ -97,26 +96,37 @@ header{
 
 .home > .right{
     float: right;
-    border: 1px dashed orange;
     width: 40%;
-    /* margin: auto 5%;  */
+    height: 800px;
+    position: relative;
 }
 
-.right > img{
-    width: 70%;
-    height: 80%;
+.right > .front{    
+    width: 237pt;
+    height: 480pt;
+    position: absolute;
+    top: 66pt;
+    left: 17pt;
 }
 
+.right > .back{
+    width: 420pt;
+    height: 600pt;
+    transform: translate(-100px, 0pt);
+}
 .right > p{
     color: #444b57;
-    font-size: 18pt;
+    font-size: 17pt;
+    line-height: 1.5;
 }
 
 .pay_main{
+    height: 400px;
     clear: both;
     background-color: #f9fafb;
-    border: 1px dashed blue;
-    padding: 5% 10%;
+    padding: 10% 10%;
+    height: 200pt;
+
 }
 
 .pay_main > p{
@@ -131,17 +141,16 @@ header{
 
 .payment{
     background-color: #f9fafb;
-    border: 5px dashed yellow;
-    height: 1000px;
+    height: 1200px;
     padding: 5% 12%;
 }
 
 
 .payment > .left{
-    border: 1px dashed pink;
     float: left;
     width : 43%;
     height : 80%;
+    padding: 5% 0;
 }
 
 .payment > .left > p{
@@ -162,10 +171,10 @@ header{
 .payment > .left > img{
     width: 480px;
     height: 360px;
+    transform: translate(-35px, 20px);
 }
 
 .payment > .right{
-    border : 1px dashed pink;
     float: right;
     width : 43%;
     height: 80%;
@@ -174,6 +183,7 @@ header{
 .payment > .right > img{
     width: 480px;
     height: 360px;
+    transform: translate(-30px, -20px);
 }
 
 .payment > .right > p{
@@ -191,6 +201,11 @@ header{
     color: #9fa5ad;
 }
 
+.loan{
+    height: 1000px;
+    padding: 15% 10%;
+    position: relative;
+}
 
 .loan > .left{
     float: left;
@@ -204,10 +219,31 @@ header{
     height: 80%;
 }
 
+.loan .front{
+    height: 570pt;
+    width: 260pt;
+    position: absolute;
+    left: 800px;
+    top: 240px;
+}
+
+.loan .sub{
+    font-size: 16pt;
+    color:#41444a;
+    line-height: 1.5;
+}
+
+
+.loan .back{
+    height: 700pt;
+    width: 450pt;
+    transform: translate(-60px, -48pt);
+}
+
 .credit{
     clear:both;
     background-color: #f9fafb;  
-    padding: 5% 10%;
+    padding: 15% 10%;
 }
 
 .credit > p{
@@ -220,16 +256,17 @@ header{
     color: black;
 }
 
+
 .credit-grade{
     background-color: #f9fafb;  
     height: 1000px;
+    padding: 5% 10%;
 }
 
 .credit-grade > .left{
     float: left;
-    width: 43%;
+    width: 45%;
     height: 800px;
-    border: 3px dashed yellow;
 }
 
 .credit-grade .main{
@@ -238,32 +275,173 @@ header{
 }
 
 .credit-grade .sub{
-    font-size : 15pt;
+    font-size : 17pt;
     color: #7e8691;
 }
 
 .credit-grade > .left > img{
-    height: 50px;
-    width: 90px;
+    height: 130px;
+    width: 130px;
 }
 
 .credit-grade > .right{
     float: right;
-    width: 43%;
+    width: 45%;
     height: 800px;
-    border: 3px dashed yellow;
 }
 
 .credit-grade > .right > img{
-    height: 10px;
-    width: 80px;
+    height: 130px;
+    width: 130px;
 }
 
+.investment{
+    padding: 15% 10%;
+    position: relative;
+    height: 1000pt;
+}
+.investment > .sub{
+    font-size: 20pt;
+    color: #4c82ee;
+}
 
+.investment > .main{
+    font-size: 38pt;
+    color: black;
+}
 
+.investment > img{
+    height: 780px;
+    width: 370px;
+    display: block;
+    margin: 0 auto;
 
+}
 
+.investment > .last{
+    text-align: center;
+    font-size : 16pt;
+}
 
+.section1{
+    position: relative;
+}
 
+.section1 > img{
+    height: 500px;
+    width: 1100px;
+    display: block;
+    margin : 0 auto;
+}
 
+.section1 > .text{
+    color: white;
+    font-size: 50pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section1-1{
+    padding: 10% 10%;
+}
+
+.section1-1 > p{
+    font-size: 45pt;
+}
+
+.section1 > .peo1{
+    height: 550pt;
+    width: 520pt;
+}
+
+.section1-2{
+    padding: 5% 10%;
+}
+
+.section1 #black{
+    color : black;
+    font-size : 27pt;
+}
+
+.section1 #grey{
+    color: #c3c6cb;
+    font-size : 27pt;
+
+}
+
+.section1 #m_grey{
+    color: #41444a;
+    font-size: 15pt;
+}
+
+.section1-3{
+    padding: 5% 10%;
+    height: 800px;
+}
+.section1-3 > .left{
+    float: left;
+    height: 600pt;
+    width: 480pt;
+    color: #41444a;
+}
+
+.section1-3 > .right{
+    float: right;
+    height: 350pt;
+    width: 270pt;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section1-3 > .righttext{
+    float: right;
+    font-size: 14pt;
+    vertical-align: text-bottom;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.section1-4{
+    padding: 0 10%;
+}
+.section1-4 > .lefttext{
+    clear: both;
+    font-size: 27pt;
+}
+
+.section1-4 > .lefttext2{
+    clear: both;
+    font-size: 27pt;
+    color: #7e8691;
+}
+
+.section1-5{
+    padding: 15% 10%;
+    height: 700pt;
+}
+
+.section1-5 > img{
+    height: 500pt;
+    width: 760pt;
+    display: block;
+    margin: 0 auto;
+}
+
+.section1-5 > .left{
+    float: left;
+    font-size: 27pt;
+}
+
+.section1-5 > .left2{
+    float: left;
+    font-size: 27pt;
+    color: #c3c6cb;
+}
+
+.section1-5 > .right{
+    float: right;
+    font-size: 13pt;
+}
 
